@@ -60,11 +60,7 @@ export default class Server {
   async listen(): Promise<void> {
     return new Promise((resolve) => {
       this.httpServer = this.express.listen(this.port, () => {
-        this.logger.info(
-          `Backend App is running at http://localhost:${this.port} in ${this.express.get(
-            "env"
-          )} mode`
-        );
+        this.logger.info(`Backend App is running in ${this.express.get("env")} mode`);
 
         this.logger.info("Press CTRL-C to stop\n");
         resolve();
