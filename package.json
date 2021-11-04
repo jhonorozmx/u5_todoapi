@@ -7,6 +7,7 @@
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "build": "tsc",
     "postinstall": "npm run build",
+    "heroku-postbuild": "npm install pm2",
     "dev": "NODE_ENV=dev ts-node-dev --ignore-watch node_modules ./src/start.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
