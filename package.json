@@ -4,7 +4,7 @@
   "author": "Jhonattan Orozco",
   "description": "Todo API to practice deployment in Heroku",
   "scripts": {
-    "start": "NODE_ENV=production node dist/start.js",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "build": "tsc",
     "postinstall": "npm run build",
     "dev": "NODE_ENV=dev ts-node-dev --ignore-watch node_modules ./src/start.ts",
@@ -20,6 +20,7 @@
     "helmet": "^4.6.0",
     "mongoose": "^6.0.12",
     "morgan": "^1.10.0",
+    "pm2": "^5.1.2",
     "pug": "^3.0.2",
     "typescript": "^4.4.4",
     "winston": "^3.3.3"
