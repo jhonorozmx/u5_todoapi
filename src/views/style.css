@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202124;
+  text-align: center;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 4rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+}
+
+.endpoint {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #3d4252;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 1.5rem;
+}
+
+.endpoint p {
+  font-family: Consolas, "courier new";
+}
+.title {
+  font-size: 2rem;
+}

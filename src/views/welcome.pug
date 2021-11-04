@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    style
+      include style.css 
+    title ToDo's Api 
+  body
+    h1 The API is Running
+    h2 How to use it 
+    div(class= "container")
+      div(class="endpoint")
+        p(class="title") Create a ToDo
+        p POST /todos
+        p Body:
+          p {"text" : "todoText"}
+      div(class="endpoint")
+        p(class="title") Read all ToDo's
+        p GET /todos
+      div(class="endpoint")
+        p(class="title") Read one ToDo
+        p GET /todos/:id
+      div(class="endpoint")
+        p(class="title") Update a ToDo
+        p PUT /todos/:id
+        p Body:
+          p {"text" : "newText"}
+      div(class="endpoint")
+        p(class="title") Delete a ToDo
+        p DELETE /todos/:id
+
+      div(class="endpoint")
+        p(class="title") Note:
+        p Before every endpoint you must add the rest of the URL, for example: http://localhost:5000/todos

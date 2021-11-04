@@ -1,31 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "noImplicitAny": true,
+    "strict": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "sourceMap": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-
-    /* Modules */
-    "module": "commonjs",
-    "rootDir": "src",
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "resolveJsonModule": true,
-
-    /* Emit */
-    "sourceMap": true,
-    "outDir": "./dist",
-    "removeComments": false,
-    "noEmit": false,
-    "preserveConstEnums": true,
-
-    /* Interop Constraints */
     "esModuleInterop": true,
-
-    /* Type Checking */
-    "strict": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "rootDir": "src",
+    "baseUrl": "."
   },
   "include": ["src/**/**.ts"],
   "exclude": ["node_modules"]
