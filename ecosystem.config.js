@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "u5_todoapi",
+      name: "u5-todoapi",
       script: "./dist/start.js",
       instances: 2,
       env: {
